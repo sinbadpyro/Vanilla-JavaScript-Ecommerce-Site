@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    background-color: #EBBAB9;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+h1 {
+    padding: 10px;
+    color: #561D25;
+}
+
+.cart {
+    position: relative;
+    font-size: 30px;
+    background-color: #F87666;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cartAmount {
+    position: absolute;
+    top: -17px;
+    right: -13px;
+    background-color: #114B5F;
+    padding: 2px 5px;
+    border-radius: 5px;
+
+}
+
+section {
+    max-width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.card {
+    max-width: 23%;
+}
+
+/****MEDIA QUERY****/
+@media(max-width: 1000px){
+    .card{
+       max-width: 45%;
+    }
+}
+
+@media(max-width: 500px){
+    section {
+      
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+
+    .card{
+       max-width: 80%;
+       margin: auto;
+    }
+}
+
+.card img {
+
+    width: 100%;
+    vertical-align: top;
+    /* Add this line to align the image to the top */
+
+}
+
+.container {
+
+    background-color: #EBBAB9;
+    text-align: center;
+    padding: 5px;
+    border-radius: 1px;
+}
+
+h2 {
+    color: #561D25;
+}
+
+.price-quantity {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    font-size: 18px;
+    color: #561D25;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons i {
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    padding: 5px; /* Adjust the padding as needed */
+    border-radius: 5px;
+}
+.quantity{
+     margin: 0 1rem;
+}
